@@ -1,6 +1,4 @@
-use role accountadmin;
-create database test_analytics;
-create schema test_analytics.dw_stage;
+
 /*
 Here we are creating below:
  --> Snowflake Managed Iceberg table having external volume in ADLS Gen2.
@@ -21,10 +19,3 @@ azure_tenant_id = '<tenant_ID>'
 
 desc external volume azure_external_volume;
 
--- create a medium warehouse of gen2
-create warehouse iceberg_table_wh
-WAREHOUSE_TYPE = 'STANDARD'
-WAREHOUSE_SIZE = 'MEDIUM'
-RESOURCE_CONSTRAINT = 'STANDARD_GEN_2'
-AUTO_RESUME = TRUE
-AUTO_SUSPEND=  300;
