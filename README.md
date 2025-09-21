@@ -19,4 +19,10 @@ Enable large-scale analytics using **Snowflake Iceberg tables**, while avoiding 
 │  
 └── README.md (this file)
 
+## Iceberg Structure Exploration
+
+In the `iceberg_structure/` folder, you will find decoded Avro files that Apache Iceberg generates during table operations.  
+These files have been converted into a **human-readable format** for easier understanding of the internal Iceberg architecture.  
+Each operation (e.g., create, insert, delete, snapshot) has its own subfolder with the decoded metadata.
+
 ![Iceberg Metadata](iceberg-metadata-991x1024.webp)
