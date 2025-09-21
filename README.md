@@ -18,3 +18,5 @@ Enable large-scale analytics using **Snowflake Iceberg tables**, while avoiding 
 │ └── iceberg_table_load.sql  
 │  
 └── README.md (this file)
+
+![Iceberg Metadata](iceberg-metadata-991x1024.webp)
